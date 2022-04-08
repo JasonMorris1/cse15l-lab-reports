@@ -1,5 +1,6 @@
 Was up World!
 
+[Lab Report 1](lab-report-1-week-2.html)
 `inline code example`
 :trollface:
 # this is heading 1

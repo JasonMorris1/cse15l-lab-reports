@@ -9,7 +9,7 @@
     <img src="assets/images/vscodeDownload.png" width = "500" alt="centered image" />
 </p>
 
-## 2. Install VSCODE
+## 2. Install VSCODE :floppy_disk:
 
 <h3 align="center">Accept the License Agreement</h3>
 
@@ -36,7 +36,7 @@
 </p>
 
 
-## 3. Install OpenSHH (Windows Guide)
+## 3. Install OpenSHH (Windows Guide) :satellite:
 [Microsoft Guide](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
 
 ### Open Power shell and enter command to check if Openssh is already installed
@@ -90,7 +90,7 @@ ieng6-203   23:25:01   1  0.08,  0.15,  0.11
 Sun Jan 02, 2022 11:28pm - Prepping cs15lsp22
 ```
 
-## 5. Run some commands on the server
+## 5. Run some commands on the server :calling:
 ``` bash
 cd ~
 cd
@@ -183,7 +183,7 @@ cs15lsp22ajb
 ```
 
 
-## 7. Setting an SSH Key
+## 7. Setting an SSH Key :key:
 
 #### Use ssh-keygen to create a pair of files, a public key and a private key.
 On the client computer run `ssh-keygen` or `ssh-keygen -t ed25519` on windows. 

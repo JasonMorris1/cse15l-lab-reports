@@ -55,15 +55,15 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 
 
 ## 4. Connecting to Remote Server
-**In VScode open a terminal in VSCode (Ctrl + `, or use the Terminal → New Terminal menu option).**
+1. **In VScode open a terminal in VSCode (Ctrl + `, or use the Terminal → New Terminal menu option).**
 
-#### Connect to the ieng6 server using ssh
+2. #### Connect to the ieng6 server using ssh
 **Note: Replace cs15lsp22zz with your account name.**
 
 ``` bash
 $ ssh cs15lsp22zz@ieng6.ucsd.edu
 ```
-**When prompted enter you password. Your results should look simmilar to this**
+3. **When prompted enter you password. Your results should look simmilar to this**
 ```
 ⤇ ssh cs15lsp22zz@ieng6.ucsd.edu
 The authenticity of host 'ieng6-202.ucsd.edu (128.54.70.227)' can't be established.

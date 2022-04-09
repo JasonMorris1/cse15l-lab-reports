@@ -244,3 +244,4 @@ connect to host in new Window.
 ### Now you can use VSCODE and your files and programs will be stored and remotely ran on the UCSD server.
 
 ![image](/assets/images/vscodeRemote.png)
+:trollface:

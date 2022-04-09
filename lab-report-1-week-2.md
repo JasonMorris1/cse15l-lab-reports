@@ -1,3 +1,5 @@
+[Home](cse15l-lab-reports.html)
+
 # CSE 15L: Setting up Visual Studio Code
 
 [LAB 1 instruction Link](https://docs.google.com/document/d/1AO6RDoJnaWxMui-UFjEa_2bbQ4qcANpbIpPuV-awsOg/edit#)

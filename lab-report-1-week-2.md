@@ -30,7 +30,7 @@
 <h3 align="center">Open Vscode</h3>
 
 <p align="center">
-    <img src="assets/images/vscodestep3.png" width = "500" alt="centered image" />
+    <img src="assets/images/vscodeOpen.png" width = "500" alt="centered image" />
 </p>
 
 
@@ -57,13 +57,13 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 ## 4. Connecting to Remote Server
 1. **In VScode open a terminal in VSCode (Ctrl + `, or use the Terminal → New Terminal menu option).**
 
-2. #### Connect to the ieng6 server using ssh
+2. **Connect to the ieng6 server using ssh**
 **Note: Replace cs15lsp22zz with your account name.**
 
 ``` bash
 $ ssh cs15lsp22zz@ieng6.ucsd.edu
 ```
-3. **When prompted enter you password. Your results should look simmilar to this**
+**When prompted enter you password. Your results should look simmilar to this**
 
 ```
 ⤇ ssh cs15lsp22zz@ieng6.ucsd.edu
@@ -102,5 +102,7 @@ cat /home/linux/ieng6/cs15lsp22/public/hello.txt
 
 
 ## 7. Setting an SSH Key
+
+
 
 ## 8. Optimizing Remote Running

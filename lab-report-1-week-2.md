@@ -147,7 +147,7 @@ WhereAmI.java                                                     100%  311     
 
 #### SSH back into the server and run the `ls` command
 
-* ##### You should see the file in your home directory
+ You should see the file in your home directory
 
 ```
 [cs15lsp22ajb@ieng6-201]:~:54$ ls
@@ -160,21 +160,3 @@ CSE12_PA1  WhereAmI.class  WhereAmI.java  perl5  test
 
 ## 8. Optimizing Remote Running
 
-<div class= "color">wow</div>
-
-
-
-<style> 
-.color {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
-}
-
-@keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
-}
-</style>

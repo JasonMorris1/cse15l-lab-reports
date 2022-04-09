@@ -58,7 +58,7 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 ```
 
 
-## 4. Connecting to Remote Server
+## 4. Connecting to Remote Server :computer:
 1. **In VScode open a terminal in VSCode (Ctrl + `, or use the Terminal → New Terminal menu option).**
 
 2. **Connect to the ieng6 server using ssh**
@@ -241,4 +241,8 @@ connect to host in new Window.
     <img src="assets/images/remote.png" width = "400" alt="centered image" />
 </p>
 
-#### Now you can use VSCODE and your files and programs will be stored and remotly ran on the UCSD server.
+### Now you can use VSCODE and your files and programs will be stored and remotly ran on the UCSD server.
+
+<p align="center">
+    <img src="assets/images/Vscoderemote.png" width = "600" alt="centered image" />
+</p>

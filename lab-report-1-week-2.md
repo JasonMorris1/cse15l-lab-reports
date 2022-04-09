@@ -2,6 +2,8 @@
 
 [LAB 1 instruction Link](https://docs.google.com/document/d/1AO6RDoJnaWxMui-UFjEa_2bbQ4qcANpbIpPuV-awsOg/edit#)
 
+[The Forbidden Link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
 ## 1. Download VScode for your operating system [VSCODE link](https://code.visualstudio.com/download) :arrow_left:
 <p align="center">
     <img src="assets/images/vscodeDownload.png" width = "500" alt="centered image" />
@@ -107,7 +109,7 @@ cat /home/linux/ieng6/cs15lsp22/public/hello.txt
 
 
 
-## 6. Moving Files with scp
+## 6. Moving Files over SSH with scp
 
 
 ### Create a file name WhereAmI.java in VSCode with the following code:
@@ -147,12 +149,39 @@ WhereAmI.java                                                     100%  311     
 
 #### SSH back into the server and run the `ls` command
 
- You should see the file in your home directory
+#### You should see the file in your home directory
 
 ```
 [cs15lsp22ajb@ieng6-201]:~:54$ ls
 CSE12_PA1  WhereAmI.class  WhereAmI.java  perl5  test
 ```
+#### SSH back into the server and run javac and java
+
+```
+PS C:\Users\jason\Documents\cse15l-lab-reports> ssh cs15lsp22ajb@ieng6.ucsd.edu
+Last login: Mon Nov 29 17:33:04 2021 from 100.83.55.225
+quota: No filesystem specified.
+Hello cs15lsp22ajb, you are currently logged into ieng6-202.ucsd.edu
+
+You are using 0% CPU on this system
+
+Cluster Status 
+Hostname     Time    #Users  Load  Averages
+ieng6-201   13:20:01   11  0.45,  0.35,  0.23
+ieng6-202   13:20:01   7   1.19,  1.12,  1.10
+ieng6-203   13:20:01   7   2.42,  2.55,  2.64
+
+
+Sat Apr 09, 2022  1:24pm - Prepping cs15lsp22
+[cs15lsp22ajb@ieng6-202]:~:92$ javac WhereAmI.java
+[cs15lsp22ajb@ieng6-202]:~:93$ java WhereAmI
+Linux
+cs15lsp22ajb
+/home/linux/ieng6/cs15lsp22/cs15lsp22ajb
+/home/linux/ieng6/cs15lsp22/cs15lsp22ajb
+[cs15lsp22ajb@ieng6-202]:~:94$
+```
+
 
 ## 7. Setting an SSH Key
 

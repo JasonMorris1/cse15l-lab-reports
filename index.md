@@ -1,15 +1,15 @@
-Was up World!
+Hello World!
 
 [Lab Report 1](lab-report-1-week-2.html)
 `inline code example`
-:trollface:
+
 # this is heading 1
 ## this is heading 2
 ### this is heading 3
 
 **this is bold text**
-:trollface:
-*this is itatlic i think*
+
+*this is itatlic*
 
 ***
 
@@ -31,4 +31,3 @@ block
 
 ![Image](https://www.wildrepublic.com/wp-content/uploads/2018/11/505772048-siberian-husky-xl.jpg)
 
-:trollface:

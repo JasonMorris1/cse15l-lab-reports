@@ -67,7 +67,7 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 ``` bash
 $ ssh cs15lsp22zz@ieng6.ucsd.edu
 ```
-**When prompted enter you password. Your results should look simmilar to this**
+**When prompted enter you password. Your results should look similar to this**
 
 ```
 ⤇ ssh cs15lsp22zz@ieng6.ucsd.edu
@@ -101,7 +101,7 @@ cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/
 cat /home/linux/ieng6/cs15lsp22/public/hello.txt
 ```
 
-### Screen shot of some commmands being run. 
+### Screen shot of some commands being run. 
 <p align="center">
     <img src="assets/images/commands.png" width = "600" alt="centered image" />
 </p>
@@ -141,7 +141,7 @@ PS C:\Users\jason\Documents\cse15l-lab-reports>
 scp WhereAmI.java cs15lsp22ajb@ieng6.ucsd.edu:~/
 ```
 * Note. You should be prompted to enter you password
-#### Your result should look simmilar to this
+#### Your result should look similar to this
 ```
 PS C:\Users\jason\Documents\cse15l-lab-reports> scp WhereAmI.java cs15lsp22ajb@ieng6.ucsd.edu:~/
 WhereAmI.java                                                     100%  311     1.0KB/s   00:00  
@@ -231,16 +231,16 @@ In VSCODE install Remote - SSH extensions
     <img src="assets/images/sshHost.png" width = "400" alt="centered image" />
 </p>
 
-* When prompted enter the server adress `ssh cs15lsp22ajb@ieng6.ucsd.edu`
+* When prompted enter the server address `ssh cs15lsp22ajb@ieng6.ucsd.edu`
 
 #### This will install VSCODE server on the UCSD server.
-Once VSCODE server has finished intalling on the server go to the Remote Explorer tab on the left sidebar of VSCODE and click on
+Once VSCODE server has finished installing on the server go to the Remote Explorer tab on the left sidebar of VSCODE and click on
 connect to host in new Window.
 
 <p align="center">
     <img src="assets/images/remote.png" width = "400" alt="centered image" />
 </p>
 
-### Now you can use VSCODE and your files and programs will be stored and remotly ran on the UCSD server.
+### Now you can use VSCODE and your files and programs will be stored and remotely ran on the UCSD server.
 
 ![image](/assets/images/vscodeRemote.png)

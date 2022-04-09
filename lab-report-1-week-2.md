@@ -97,8 +97,29 @@ cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/
 cat /home/linux/ieng6/cs15lsp22/public/hello.txt
 ```
 
+### Screen shot of some commmands being run. 
+<p align="center">
+    <img src="assets/images/commands.png" width = "500" alt="centered image" />
+</p>
+
+
+
 
 ## 6. Moving Files with scp
+
+
+### Create a file name WhereAmI.java in VSCode
+
+``` java
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
 
 
 ## 7. Setting an SSH Key
@@ -106,3 +127,4 @@ cat /home/linux/ieng6/cs15lsp22/public/hello.txt
 
 
 ## 8. Optimizing Remote Running
+

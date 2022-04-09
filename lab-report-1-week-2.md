@@ -109,7 +109,7 @@ cat /home/linux/ieng6/cs15lsp22/public/hello.txt
 
 
 
-## 6. Moving Files over SSH with scp
+## 6. Moving Files over SSH with scp :clipboard:
 
 
 ### Create a file name WhereAmI.java in VSCode with the following code:
@@ -183,7 +183,7 @@ cs15lsp22ajb
 ```
 
 
-## 7. Setting an SSH Key
+## 7. Setting an SSH Key :key:
 
 #### Use ssh-keygen to create a pair of files, a public key and a private key.
 On the client computer run `ssh-keygen` or `ssh-keygen -t ed25519` on windows. 
@@ -216,7 +216,7 @@ The key's randomart image is:
 
 
 
-## 8. Optimizing Remote Running
+## 8. Optimizing Remote Running :link:
 
 In VSCODE install Remote - SSH extensions
 

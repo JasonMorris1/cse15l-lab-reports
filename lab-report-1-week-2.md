@@ -230,3 +230,13 @@ In VSCODE install Remote - SSH extensions
 <p align="center">
     <img src="assets/images/sshHost.png" width = "400" alt="centered image" />
 </p>
+
+* When prompted enter the server adress `ssh cs15lsp22ajb@ieng6.ucsd.edu`
+
+#### This will install VSCODE server on the UCSD server.
+Once VSCODE server has finished intalling on the server go to the Remote Explorer tab on the left sidebar of VSCODE and click on
+connect to host in new Window.
+
+<p align="center">
+    <img src="assets/images/remote.png" width = "400" alt="centered image" />
+</p>

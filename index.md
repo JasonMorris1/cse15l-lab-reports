@@ -31,4 +31,4 @@ block
 
 # My dog
 ![Image](/assets/images/dog.jpg)
-
+![Image](/assets/images/dogs.gif)

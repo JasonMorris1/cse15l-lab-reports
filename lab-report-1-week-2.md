@@ -2,7 +2,6 @@
 
 [LAB 1 instruction Link](https://docs.google.com/document/d/1AO6RDoJnaWxMui-UFjEa_2bbQ4qcANpbIpPuV-awsOg/edit#)
 
-[The Forbidden Link](https://www.youtube.com/watch?v=dQw4w9WgXcQ) :trollface:
 
 ## 1. Download VScode for your operating system [VSCODE link](https://code.visualstudio.com/download) :arrow_left:
 <p align="center">

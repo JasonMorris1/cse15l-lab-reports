@@ -1,5 +1,7 @@
 # CSE 12: Setting up Visual Studio Code
 
+[LAB 1 instruction Link](https://docs.google.com/document/d/1AO6RDoJnaWxMui-UFjEa_2bbQ4qcANpbIpPuV-awsOg/edit#)
+
 ## 1. Download VScode for your operating system [VSCODE link](https://code.visualstudio.com/download) :arrow_left:
 <p align="center">
     <img src="assets/images/vscodeDownload.png" width = "500" alt="centered image" />
@@ -51,6 +53,10 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 
 ## 4. Connecting to Remote Server
 >In VScode open a terminal in VSCode (Ctrl + `, or use the Terminal → New Terminal menu option).
+
+``` bash
+$ ssh cs15lsp22zz@ieng6.ucsd.edu
+```
 
 <p align="center">
     <img src="assets/images/sshConnect.png" width = "500" alt="centered image" />

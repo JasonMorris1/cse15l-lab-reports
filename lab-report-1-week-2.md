@@ -183,7 +183,7 @@ cs15lsp22ajb
 ```
 
 
-## 7. Setting an SSH Key :key:
+## 7. Setting an SSH Key
 
 #### Use ssh-keygen to create a pair of files, a public key and a private key.
 On the client computer run `ssh-keygen` or `ssh-keygen -t ed25519` on windows. 
@@ -243,6 +243,4 @@ connect to host in new Window.
 
 ### Now you can use VSCODE and your files and programs will be stored and remotly ran on the UCSD server.
 
-<p align="center">
-    <img src="assets/images/Vscoderemote.png" width = "500" alt="centered image" />
-</p>
+![image](/assets/images/vscodeRemote.png)

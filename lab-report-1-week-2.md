@@ -178,7 +178,6 @@ CSE12_PA1  WhereAmI.class  WhereAmI.java  perl5  test
   <div class="shadow"></div>
 </div>
 
-
 <style> 
 body {
   background: #323641;

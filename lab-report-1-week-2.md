@@ -59,6 +59,7 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 
 #### Connect to the ieng6 server using ssh
 > #### Note: Replace cs15lsp22zz with your account name.
+
 ``` bash
 $ ssh cs15lsp22zz@ieng6.ucsd.edu
 ```

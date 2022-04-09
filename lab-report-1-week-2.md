@@ -64,6 +64,7 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 $ ssh cs15lsp22zz@ieng6.ucsd.edu
 ```
 3. **When prompted enter you password. Your results should look simmilar to this**
+
 ```
 ⤇ ssh cs15lsp22zz@ieng6.ucsd.edu
 The authenticity of host 'ieng6-202.ucsd.edu (128.54.70.227)' can't be established.
@@ -95,3 +96,11 @@ ls <directory> where <directory> is /home/linux/ieng6/cs15lsp22/cs15lsp22abc, wh
 cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/
 cat /home/linux/ieng6/cs15lsp22/public/hello.txt
 ```
+
+
+## 6. Moving Files with scp
+
+
+## 7. Setting an SSH Key
+
+## 8. Optimizing Remote Running

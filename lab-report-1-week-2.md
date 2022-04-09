@@ -63,12 +63,12 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 2. **Connect to the ieng6 server using ssh**
 **Note: Replace cs15lsp22zz with your account name.**
 
-``` bat
+```
 $ ssh cs15lsp22zz@ieng6.ucsd.edu
 ```
 **When prompted enter you password. Your results should look similar to this**
 
-``` bat
+```
 ⤇ ssh cs15lsp22zz@ieng6.ucsd.edu
 The authenticity of host 'ieng6-202.ucsd.edu (128.54.70.227)' can't be established.
 RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
@@ -90,7 +90,7 @@ Sun Jan 02, 2022 11:28pm - Prepping cs15lsp22
 ```
 
 ## 5. Run some commands on the server :calling:
-``` bat
+```
 cd ~
 cd
 ls -lat
@@ -136,7 +136,7 @@ PS C:\Users\jason\Documents\cse15l-lab-reports>
 ```
 
 #### To copy the file to the server use the scp command
-``` console
+```
 scp WhereAmI.java cs15lsp22ajb@ieng6.ucsd.edu:~/
 ```
 * Note. You should be prompted to enter you password

@@ -63,9 +63,24 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 ``` bash
 $ ssh cs15lsp22zz@ieng6.ucsd.edu
 ```
+#### When prompted enter you password. Your results should look simmilar to this
+```
+⤇ ssh cs15lsp22zz@ieng6.ucsd.edu
+The authenticity of host 'ieng6-202.ucsd.edu (128.54.70.227)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+Password: 
+Last login: Sun Jan  2 14:03:05 2022 from 107-217-10-235.lightspeed.sndgca.sbcglobal.net
+quota: No filesystem specified.
+Hello cs15lsp22zz, you are currently logged into ieng6-203.ucsd.edu
 
-<p align="center">
-    <img src="assets/images/sshConnect.png" width = "500" alt="centered image" />
-</p>
+You are using 0% CPU on this system
 
-#### Enter your password when prompted
+Cluster Status 
+Hostname     Time    #Users  Load  Averages  
+ieng6-201   23:25:01   0  0.08,  0.17,  0.11
+ieng6-202   23:25:01   1  0.09,  0.15,  0.11
+ieng6-203   23:25:01   1  0.08,  0.15,  0.11
+
+Sun Jan 02, 2022 11:28pm - Prepping cs15lsp22
+```

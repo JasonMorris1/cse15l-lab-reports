@@ -222,5 +222,11 @@ In VSCODE install Remote - SSH extensions
 
 
 <p align="center">
-    <img src="assets/images/vscodeExtensions.png" width = "600" alt="centered image" />
+    <img src="assets/images/vscodeExtensions.png" width = "400" alt="centered image" />
+</p>
+
+#### In VS Code, select Remote-SSH: Add New SSH Host... from the Command Palette (F1, Ctrl+Shift+P)
+
+<p align="center">
+    <img src="assets/images/sshHost.png" width = "400" alt="centered image" />
 </p>

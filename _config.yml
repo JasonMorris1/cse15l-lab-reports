@@ -17,6 +17,3 @@ include:
   - PULL_REQUEST_TEMPLATE.md
 
 theme: jekyll-theme-hacker
-
-github:
-  is_project_page: false

@@ -45,7 +45,7 @@ Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
 
 #### If Open SSH is not installed, install it with the following powershell command:
 
-``` cmd
+``` bat
 # Install the OpenSSH Client
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 

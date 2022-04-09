@@ -154,7 +154,7 @@ WhereAmI.java                                                     100%  311     
 [cs15lsp22ajb@ieng6-201]:~:54$ ls
 CSE12_PA1  WhereAmI.class  WhereAmI.java  perl5  test
 ```
-#### SSH back into the server and run javac and java
+#### Run javac and java on the server
 
 ```
 PS C:\Users\jason\Documents\cse15l-lab-reports> ssh cs15lsp22ajb@ieng6.ucsd.edu

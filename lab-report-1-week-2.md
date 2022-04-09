@@ -45,7 +45,7 @@ Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
 
 #### If Open SSH is not installed, install it with the following powershell command:
 
-```
+``` cmd
 # Install the OpenSSH Client
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 
@@ -55,10 +55,10 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 
 
 ## 4. Connecting to Remote Server
->In VScode open a terminal in VSCode (Ctrl + `, or use the Terminal → New Terminal menu option).
+> #### In VScode open a terminal in VSCode (Ctrl + `, or use the Terminal → New Terminal menu option).
 
 #### Connect to the ieng6 server using ssh
->Note: Replace cs15lsp22zz with your account name.
+> #### Note: Replace cs15lsp22zz with your account name.
 ``` bash
 $ ssh cs15lsp22zz@ieng6.ucsd.edu
 ```
@@ -66,3 +66,5 @@ $ ssh cs15lsp22zz@ieng6.ucsd.edu
 <p align="center">
     <img src="assets/images/sshConnect.png" width = "500" alt="centered image" />
 </p>
+
+#### Enter your password when prompted

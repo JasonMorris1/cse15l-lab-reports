@@ -1,4 +1,4 @@
-[Home](cse15l-lab-reports.html)
+[Home](https://jasonmorris1.github.io/cse15l-lab-reports/)
 
 # CSE 15L: Setting up Visual Studio Code
 

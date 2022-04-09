@@ -187,7 +187,6 @@ cs15lsp22ajb
 #### Use ssh-keygen to create a pair of files, a public key and a private key.
 On the client computer run `ssh-keygen` or `ssh-keygen -t ed25519` on windows. 
 
-#### on client (your computer)
 ```
 $ ssh-keygen
 Generating public/private rsa key pair.

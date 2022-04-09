@@ -29,5 +29,6 @@ block
 [Link to LAB 2](https://docs.google.com/document/d/1Nw6gdehL-BzqjeVV1jzi_Ni4cdpx2uquLztLGTdzUdU/edit)	
 
 
-![Image](https://www.wildrepublic.com/wp-content/uploads/2018/11/505772048-siberian-husky-xl.jpg)
+# My dog
+![Image](/assets/images/dog.jpg)
 

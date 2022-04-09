@@ -244,5 +244,5 @@ connect to host in new Window.
 ### Now you can use VSCODE and your files and programs will be stored and remotly ran on the UCSD server.
 
 <p align="center">
-    <img src="assets/images/Vscoderemote.png" width = "600" alt="centered image" />
+    <img src="assets/images/Vscoderemote.png" width = "500" alt="centered image" />
 </p>

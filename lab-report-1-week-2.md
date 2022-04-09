@@ -35,6 +35,8 @@
 
 
 ## 3. Install OpenSHH (Windows Guide)
+[Microsoft Guide](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
+
 ### Open Power shell and enter command to check if Openssh is already installed
 ``` bat
 Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
@@ -99,7 +101,7 @@ cat /home/linux/ieng6/cs15lsp22/public/hello.txt
 
 ### Screen shot of some commmands being run. 
 <p align="center">
-    <img src="assets/images/commands.png" width = "500" alt="centered image" />
+    <img src="assets/images/commands.png" width = "600" alt="centered image" />
 </p>
 
 
@@ -108,7 +110,7 @@ cat /home/linux/ieng6/cs15lsp22/public/hello.txt
 ## 6. Moving Files with scp
 
 
-### Create a file name WhereAmI.java in VSCode
+### Create a file name WhereAmI.java in VSCode with the following code:
 
 ``` java
 class WhereAmI {
@@ -120,7 +122,37 @@ class WhereAmI {
   }
 }
 ```
+#### Run the code using javac and java in the terminal
 
+```
+PS C:\Users\jason\Documents\cse15l-lab-reports> javac .\WhereAmI.java
+PS C:\Users\jason\Documents\cse15l-lab-reports> java WhereAmI
+Windows 10
+jason
+C:\Users\jason
+C:\Users\jason\Documents\cse15l-lab-reports
+PS C:\Users\jason\Documents\cse15l-lab-reports> 
+```
+
+#### To copy the file to the server use the scp command
+``` bash
+scp WhereAmI.java cs15lsp22ajb@ieng6.ucsd.edu:~/
+```
+* Note. You should be prompted to enter you password
+#### Your result should look simmilar to this
+```
+PS C:\Users\jason\Documents\cse15l-lab-reports> scp WhereAmI.java cs15lsp22ajb@ieng6.ucsd.edu:~/
+WhereAmI.java                                                     100%  311     1.0KB/s   00:00  
+```
+
+#### SSH back into the server and run the `ls` command
+
+* ##### You should see the file in your home directory
+
+```
+[cs15lsp22ajb@ieng6-201]:~:54$ ls
+CSE12_PA1  WhereAmI.class  WhereAmI.java  perl5  test
+```
 
 ## 7. Setting an SSH Key
 

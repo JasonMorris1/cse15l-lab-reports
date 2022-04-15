@@ -223,8 +223,12 @@ The key's randomart image is:
 
 `$ ssh cs15lsp22zz@ieng6.ucsd.edu "ls"` -> This will run "ls" command on the server.
 
+* You can use semicolons to run multiple commands on the same line:
+`$ cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI`
 
+* You can use the up-arrow :arrow_up: on your keyboard when in the terminal to cycle through your previous used commands. 
 
+#### You can install VSCODE server on a remote server. This allows you to use VSCODE where you files and programs are stored and ran directly on the server
 
 In VSCODE install Remote - SSH extensions
 

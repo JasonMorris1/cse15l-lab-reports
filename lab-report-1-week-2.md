@@ -218,6 +218,14 @@ The key's randomart image is:
 
 ## 8. Optimizing Remote Running :link:
 
+### Tips and tricks for remote running
+* Adding a command in quotes at the end of an `ssh` command will run that command on the server
+
+`$ ssh cs15lsp22zz@ieng6.ucsd.edu "ls"` -> This will run "ls" command on the server.
+
+
+
+
 In VSCODE install Remote - SSH extensions
 
 
@@ -244,3 +252,4 @@ connect to host in new Window.
 ### Now you can use VSCODE and your files and programs will be stored and remotely ran on the UCSD server.
 
 ![image](/assets/images/vscodeRemote.png)
+

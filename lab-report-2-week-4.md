@@ -33,7 +33,7 @@ The last bug we encountered was that a markdown image was being picked up as a l
 
 We fixed this bug by looking if there is an exclamation mark before and breaking if there is one. 
 ![image3](/assets/images/fix3.png)
-This fix however introduced another bug in the code. The symptom was that when there was a image then a link in file the code failed to find the link. This was fixed by instead of breaking when an exclamation mark is found instead we look for the next open bracket instead essentially skipping the image and looking for the next link.
+This fix however introduced another bug in the code. The symptom was that when there was a image then a link in file the code failed to find the link. This was fixed by instead of breaking when an exclamation mark is found instead we look for the next open bracket essentially skipping the image and looking for the next link.
 
 ![image4](/assets/images/fix4.png)
 

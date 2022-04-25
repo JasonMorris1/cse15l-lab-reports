@@ -18,7 +18,17 @@ The out of memory symptom was fixed by finding the bug and fixing it. A break wa
 ***
 [Test file 2](https://github.com/JasonMorris1/markdown-parser/blob/066335a1ae1b43d45ec9de511ec5d90beac9dac9/test2.md)
 
-This test file was producing the same out of memory error. We fixed it by providing break statements for the rest of the function calls to `markdown.indexOf(...)` so if we can't find the expected parenthesis or brackets there can not possibly be anymore links in the remaining String so we break.
+This test file was producing the same `Java heap space` error. We fixed it by providing break statements for the rest of the function calls to `markdown.indexOf(...)` so if we can't find the expected parenthesis or brackets there can not possibly be anymore links in the remaining String so we break.
 
 ![Error2](/assets/images/error2.png)
+***
 
+
+The last bug we encountered was that a markdown image was being picked up as a link and returned in our parser method. 
+[Test file 3](https://github.com/JasonMorris1/markdown-parser/blob/main/test-file6.md)
+
+We fixed this bug by looking if there is an exclamation mark before and breaking if there is one. 
+![image3](/assets/images/fix3.png)
+This fix however introduced another bug in the code. The symptom was that when there was a image then a link in file the code failed to find the link. This was fixed by instead of breaking looking for the next open bracket instead essentially skipping the image and looking for the next link.
+
+![image4](/assets/images/fix4.png)

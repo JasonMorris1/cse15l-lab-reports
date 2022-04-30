@@ -34,6 +34,12 @@ This test file was producing the same `Java heap space` error. We fixed it by pr
 
 ---
 # Code change 3
+```
+…failure: 1) testforValidLink(MarkdownParseTest) java.lang.AssertionError: no valid links in file expected:<true> but was:<false> at org.junit.Assert.fail(Assert.java:89) at org.junit.Assert.failNotEquals(Assert.java:835) at org.junit.Assert.assertEquals(Assert.java:120) at MarkdownParseTest.testforValidLink(MarkdownParseTest.java:190) FAILURES!!! Tests run: 14, Failures: 1
+
+
+
+```
 
 The last bug we encountered was that a markdown image was being picked up as a link and returned in our parser method. 
 [Test file 3](https://github.com/JasonMorris1/markdown-parser/blob/main/test-file6.md)

@@ -270,3 +270,37 @@ test2.md                                                                        
 test3.md                                                                                                                                                             100%   56     2.1KB/s   00:00     
 test4.md                                                                                                                                                             100%   24     0.5KB/s   00:00 
 ```
+
+## Compiling and running tests for markdown-parse
+```
+jason@JasonPC:/mnt/c/Users/jason/Documents/markdown-parser$ ssh ieng6
+Last login: Sat May  7 23:14:28 2022 from cpe-70-95-165-156.san.res.rr.com
+quota: No filesystem specified.
+Hello cs15lsp22ajb, you are currently logged into ieng6-203.ucsd.edu
+
+You are using 0% CPU on this system
+
+Cluster Status 
+Hostname     Time    #Users  Load  Averages  
+ieng6-201   23:20:01   16  15.10,  15.48,  14.12
+ieng6-202   23:20:01   18  19.79,  20.32,  19.96
+ieng6-203   23:20:01   8   20.38,  21.10,  21.35
+
+ 
+Sat May 07, 2022 11:24pm - Prepping cs15lsp22
+[cs15lsp22ajb@ieng6-203]:~:304$ cd markdown-parse/
+[cs15lsp22ajb@ieng6-203]:markdown-parse:305$ ls
+Makefile             MarkdownParse.java       MarkdownParseTest.java  invalidLink.md  mdparse    test-file.md   test-file3.md  test-file5.md  test-file7.md  test-file9.md  test3.md
+MarkdownParse.class  MarkdownParseTest.class  README.md               lib             nolink.md  test-file2.md  test-file4.md  test-file6.md  test-file8.md  test2.md       test4.md
+[cs15lsp22ajb@ieng6-203]:markdown-parse:306$ make test
+javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java
+java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
+JUnit version 4.13.2
+............links:0
+..
+Time: 0.11
+
+OK (14 tests)
+
+[cs15lsp22ajb@ieng6-203]:markdown-parse:307$ 
+```

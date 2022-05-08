@@ -1,5 +1,4 @@
 [Home](https://jasonmorris1.github.io/cse15l-lab-reports/)
-[google](www.google.com)
 # Code Change 1
 The following file caused an 
 infinite loop to occur in the program which is a symptom of a bug in our code.

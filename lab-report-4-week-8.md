@@ -5,7 +5,7 @@
 
 [My MarkdownParse repo](https://github.com/JasonMorris1/markdown-parser)
 
-[Markdown parse review repo](https://github.com/ANGUYEN625/markdown-parser)
+[MarkdownParse review repo](https://github.com/ANGUYEN625/markdown-parser)
 
 ## Snippet 1
 ```md
@@ -46,9 +46,10 @@
 
 ## My implementation
 ```
-1) testSnippet1(MarkdownParseTest)
-array lengths differed, expected.length=3 actual.length=0; arrays first differed at element [0]; expected:<`google.com> but was:<end of array>
-        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:89)
+3) testSnippet1(MarkdownParseTest)
+arrays first differed at element [0]; expected:<[`google].com> but was:<[url].com>
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
 ```
 
 ## Peers Implementation 
@@ -60,6 +61,9 @@ arrays first differed at element [0]; expected:<[`google].com> but was:<[url].co
 ```
 
 ## Snippet 1 Code Fix
+The following markdown line: ``` `[a link`](url.com) ``` Is being picked up as a link when it shouldn't because its not being rendered as a link. To fix this would be difficult. I think maybe if you check if there are two ticks that enclose either "[" or "]" or "(" then that would not count as a valid link. For some reason back ticks on the ")" still render a link.
+ ``` [code](ucsd.ed`u)` ``` is rendered as a valid link
+ This would be diffcult to code because you would need to keep track of all previous ticks and whether or not they have a closing tick.
 
 
 ## Snippet 2
@@ -95,7 +99,7 @@ arrays first differed at element [0]; expected:<[`google].com> but was:<[url].co
     }
 ```
 
-## My Imp
+## My Implementation
 
 ```
 2) testSnippet2(MarkdownParseTest)
@@ -104,7 +108,7 @@ was:<end of array>
         at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:89)
         at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
 ```
-## Peers Imp
+## Peers Implementation
 ```
 6) testSnippet2(MarkdownParseTest)
 array lengths differed, expected.length=3 actual.length=1; arrays first differed at element [0]; expected:<a.com[]> but was:<a.com[((]>
@@ -112,7 +116,7 @@ array lengths differed, expected.length=3 actual.length=1; arrays first differed
 ```
 
 ## Snippet 2 Code Fix
-
+A fix for this code would be quite involved. You would need to create multiple stacks where you keep track of parentheses, brackets, and escaped brackets in order to determine if a link should be rendered or not. For instance an escaped bracket or escaped parenthesis wouldn't be added or used to remove an open bracket from the stack. You would also need to check that you don't have escaped brackets or parenthesis in the markdown link structure like ` \[my link](link.com) `
 
 
 ## Snippet 3
@@ -188,7 +192,7 @@ And then there's more text
 ```
 
 
-## My Imp
+## My Implementation
 
 ```
 3) testSnippet3(MarkdownParseTest)
@@ -197,7 +201,7 @@ array lengths differed, expected.length=1 actual.length=2; arrays first differed
         at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
 ```
 
-## Peers Imp.
+## Peers Implementation
 
 ```
  testSnippet3(MarkdownParseTest)
@@ -207,3 +211,4 @@ https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule
 ```
 
 ## Snippet 3 Code Fix
+This would be easy to fix. If there is a line break anywhere inside of the brackets [] or  the parenthesis's () then the link is not valid. There might be some  issues however as on Unix a new line is "\n" and on windows a new line is "\r\n".

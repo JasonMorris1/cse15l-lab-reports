@@ -116,7 +116,7 @@ array lengths differed, expected.length=3 actual.length=1; arrays first differed
 ```
 
 ## Snippet 2 Code Fix
-A fix for this code would be quite involved. You would need to create multiple stacks where you keep track of parentheses, brackets, and escaped brackets in order to determine if a link should be rendered or not. For instance an escaped bracket or escaped parenthesis wouldn't be added or used to remove an open bracket from the stack. You would also need to check that you don't have escaped brackets or parenthesis in the markdown link structure like ` \[my link](link.com) `
+A fix for this code would be quite involved. You would need to create multiple stacks where you keep track of parentheses, brackets, and escaped brackets in order to determine if a link should be rendered or not. For instance an escaped bracket or escaped parenthesis wouldn't be added or used to remove an open bracket from the stack. You would also need to check that you don't have escaped brackets or parenthesis in the markdown link structure like ``` \[my link](link.com) ```
 
 
 ## Snippet 3

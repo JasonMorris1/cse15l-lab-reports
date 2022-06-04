@@ -17,3 +17,13 @@ To fix the provided implementation we could add code that checks if the next cha
 
 
 ## Test File 2
+[TestFile Link](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/22.md)
+
+
+
+Test file 22 which contains ` [foo](/bar\* "ti\*tle") ` produced a different result for my implementation which can be seen on the left side ov vimmdiff and the provided implementation on the right side.
+![img](/assets/images/vimdiff2.png)
+
+### Expected output
+![img](/assets/images//commonmark2.png)
+Since the expected output is a link my implementation provided the correct result, and the provided implementation output contained no SSSS

@@ -21,11 +21,23 @@ To fix the provided implementation we could add code that checks if the next cha
 
 
 
-Test file 22 which contains ` [foo](/bar\* "ti\*tle") ` produced a different result for my implementation which can be seen on the left side ov vimmdiff and the provided implementation on the right side.
+Test file 22 which contains 
+``` 
+[foo](/bar\* "ti\*tle")
+``` 
+
+produced a different result for my implementation which can be seen on the left side ov vimmdiff and the provided implementation on the right side.
 ![img](/assets/images/vimdiff2.png)
 
 ### Expected output
 ![img](/assets/images//commonmark2.png)
 Since the expected output is a link my implementation provided the correct result, and the provided implementation output contained no links which is incorrect. 
 If a link is provided where there is a space somewhere in the parenthesis () then the provided implementation considers this an invalid link. We can see that we only add the link to the list if the string containing the list returns -1 for the link string meaning there are no spaces inside the string. To fix this bug I would take this code out. 
-![img](/assets/images/codefix2.png)
+![img](/assets/images/codefix2.png )
+
+## Test File 3
+[link to test file](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/495.md)
+For this test file you can see the output of my implementation on the left and the provided implementation on the right.
+![img](/assets/images/vimdiff3.png)
+My implementation provides a link which is correct if you look at the rendered output of the contents of the testfile on common mark
+![img](/assets/images/commonmark3.png)

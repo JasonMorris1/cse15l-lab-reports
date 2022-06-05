@@ -39,5 +39,5 @@ If a link is provided where there is a space somewhere in the parenthesis () the
 [link to test file 496.md](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/496.md)
 For this test file you can see the output of my implementation on the left and the provided implementation on the right.
 ![img](/assets/images/vimdiff3.png)
-My implementation provides a link which is correct if you look at the rendered output of the contents of the testfile on common mark
+My implementation provides a link which is incorrect if you look at the rendered output of the contents of the testfile on common mark you can see that no links are rendered.
 ![img](/assets/images/commonmark3.png)

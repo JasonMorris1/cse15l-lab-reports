@@ -39,5 +39,10 @@ If a link is provided where there is a space somewhere in the parenthesis () the
 [link to test file 496.md](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/496.md)
 For this test file you can see the output of my implementation on the left and the provided implementation on the right.
 ![img](/assets/images/vimdiff3.png)
-My implementation provides a link which is incorrect if you look at the rendered output of the contents of the testfile on common mark you can see that no links are rendered.
+My implementation provides a link which is incorrect if you look at the rendered output of the contents of the testfile on common mark you can see that no links are rendered. The provided implementation produces the correct output.
 ![img](/assets/images/commonmark3.png)
+
+### Code Fix
+The bug in my code is that I am not checking for nested parenthesis. To fix this I would need to modify my getLinks method. The reason this markdown is not a link is because there are three opening parenthesis and only two closing parenthesis. The code I need to fix this bug would count the number of open parenthesis and the number of closed parenthesis and if there are more open parenthesis then the link would be considered invalid.
+
+![img](/assets/images/codefix3.png)
